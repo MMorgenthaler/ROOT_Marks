@@ -76,10 +76,4 @@ void Vortragsaufgabe() {
 	if(ADGaus < critVal) cout << "Die Daten sind normalverteilt" << endl;
 	else if(ADLand < critVal) cout << "Die Daten sind landau-verteilt" << endl;
 	else if(ADExp < critVal) cout << "Die Daten sind exponentiell verteilt" << endl;
-
-
-
-
-
-
 }
