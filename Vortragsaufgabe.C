@@ -63,7 +63,7 @@ void Vortragsaufgabe() {
 	// Anderson-Darling Version
 	double critVal = 0;
 	if(int(alpha*100) == 1) critVal = 3.857;
-	else if (int(alpha*100) == 5) {critVal = 2.492; 	cout << "ping" << endl;}
+	else if (int(alpha*100) == 5)  critVal = 2.492;
 	else if (int(alpha*100) == 10) critVal = 1.933;
 	cout << "\nAnderson-Darling Test" << endl;
 	double ADGaus = hGaus->AndersonDarlingTest(hReal,"T");
@@ -76,4 +76,10 @@ void Vortragsaufgabe() {
 	if(ADGaus < critVal) cout << "Die Daten sind normalverteilt" << endl;
 	else if(ADLand < critVal) cout << "Die Daten sind landau-verteilt" << endl;
 	else if(ADExp < critVal) cout << "Die Daten sind exponentiell verteilt" << endl;
+
+
+
+
+
+
 }
